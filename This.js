@@ -21,7 +21,7 @@ var arrowFunc = {
     callMe: function () {
         console.log(`<Outter function> this.name ${this.name}`); // object
         return () => {
-            console.log(`<Inner function> this.name ${this.name}`); // window
+            console.log(`<Inner function> this.name ${this.name}`); // object
         };
     }
 };
